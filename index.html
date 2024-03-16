@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Dev Community</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>DEV Community</title>
 </head>
+
 <body>
     <header>
         <nav>
-            Aqui va el codigo del nav
+            <!-- Aquí va el código del nav -->
+            <a href="/">
+                <img src="assets/logo.png" alt="DEV Community">
+            </a>
         </nav>
     </header>
-    <div class="container">
-        <aside>
-            <!-- Aqui va el codigo del aside izquierdo -->
+    <div class="layout">
+        <aside class="right-aside">
+            <!-- Aquí va el código del aside izquierdo -->
+            <div class="sidebar-card">
+                <h2>Aside Izquierdo</h2>
+                <p>Contenido del aside izquierdo.</p>
+            </div>
         </aside>
         <main>
-            <!-- Aqui va el codigo de los post -->
+            <!-- Aquí va el código de los post -->
+            <h1>Contenido Principal</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quisquam dolor consequuntur autem
+                mollitia amet.</p>
         </main>
-        <aside>
-            <!-- Aqui va el codigo del aside derecho -->
+        <aside class="left-aside">
+            <!-- Aquí va el código del aside derecho -->
+            <div class="sidebar-card">
+                <h2>Aside Derecho</h2>
+                <p>Contenido del aside derecho.</p>
+            </div>
         </aside>
     </div>
+    <footer>
+        Pie de página
+    </footer>
 </body>
+
 </html>
