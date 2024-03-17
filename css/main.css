@@ -39,13 +39,20 @@ header nav img {
   min-height: 100vh;
 }
 
+.left-aside {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar-card {
   background-color: #FFFFFF;
   padding: 1rem;
   color: #242424;
   box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.05);
   border-radius: 8px;
-  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .sidebar-card p {
   color: #575757;
@@ -56,4 +63,52 @@ footer {
   color: white;
   padding: 10px;
   text-align: center;
+}
+
+.conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget {
+  padding: 1rem;
+  border-bottom: 1px solid #7e7c7c;
+}
+
+.linklist {
+  display: flex;
+  flex-direction: column;
+}
+
+.acomm {
+  text-decoration: none;
+  color: rgb(42, 41, 41);
+}
+
+.alist {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: #404040;
+  font-size: 1rem;
+  font-family: var(--ff-sans-serif);
+}
+
+.sidelink {
+  color: black;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.subside {
+  color: #575757;
+}
+
+.subh4 {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, "Courier New", Courier, monospace;
+  color: #171717;
+  font-size: 0.9rem;
+}
+
+.commentscont {
+  color: #717171;
 }/*# sourceMappingURL=main.css.map */
