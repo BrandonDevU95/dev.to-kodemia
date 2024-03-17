@@ -11,26 +11,6 @@ body {
     background-color: $backgound;
 }
 
-header {
-    background-color: $backgound-light;
-    height: $header-height;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-
-    nav {
-        max-width: $site-width;
-        padding: 0 $layout-padding;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        position: relative;
-        height: $header-height;
-
-        img {
-            height: $header-height;
-            padding: 8px 0;
-        }
-    }
-}
 
 .layout {
     font-size: $fs-base;

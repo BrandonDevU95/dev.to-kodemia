@@ -1,0 +1,62 @@
+header {
+    background-color: $backgound-light;
+    height: $header-height;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+    nav {
+        max-width: $site-width;
+        padding: 0 $layout-padding;
+        margin: auto;
+        display: flex;
+        position: relative;
+        height: $header-height;
+
+        .dev1 {
+            height: $header-height;
+            padding: 8px 0;
+        }
+        .buscador{
+            margin-top: 8px;
+           width: 400px;
+           border-radius: 5px;
+          
+            
+           input{
+                height:40px;
+                border-radius: 5px;
+                width: 400px;
+                position: absolute;
+                            
+            } 
+             button {
+                    img {
+                        height: 30px;
+                        position: relative;
+                        margin-left: 360px;
+                        margin-top: 2px;
+                        
+                       }
+                }
+        }
+        .contenedor{
+        margin-left: 10px;
+        width: 80%;
+        border:solid 2px black;
+        align-content: center;
+       
+        .logCreat{
+            border: solid 2px red;
+            align-items: end;
+            .uno{
+                border-color: solid 1px blue;
+            }
+            .dos{
+                padding: 5px;
+                border-color: solid 1px green;
+            }
+        } }
+    }
+
+}
+
+
