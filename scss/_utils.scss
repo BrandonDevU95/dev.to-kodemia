@@ -43,13 +43,21 @@ header {
     min-height: 100vh; // Eliminar esta propiedad cuando se tenga contenido
 }
 
+.left-aside {
+    display: flex;
+    flex-direction: column;
+    
+}
 .sidebar-card {
     background-color: $backgound-light;
     padding: 1rem;
     color: $secondary;
     box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.05);
     border-radius: 8px;
-    min-height: 350px; // Eliminar esta propiedad cuando se tenga contenido
+    // min-height: 350px; // Eliminar esta propiedad cuando se tenga contenido
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     p {
         color: $text;
