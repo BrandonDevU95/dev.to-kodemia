@@ -14,6 +14,11 @@
 .acomm {
     text-decoration: none;
     color: rgb(42, 41, 41)
+    
+}
+
+.acomm:hover {
+    color: blue;
 }
 
 .alist {
@@ -22,7 +27,15 @@
     color: #404040;
     font-size: 1rem;
     font-family: var(--ff-sans-serif);
-}    
+    transition: background-color 0.5s;
+    padding: 16px;
+}   
+
+.alist:hover {
+    background-color: $backgound-light;
+    color: blue;
+    border-radius: 8px;
+}
 
 .sidelink {
     color: black;
