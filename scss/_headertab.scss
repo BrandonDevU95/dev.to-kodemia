@@ -2,8 +2,8 @@ header {
     background-color: $backgound-light;
     height: $header-height;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-
-    nav {
+    width: 100%;
+        nav {
         max-width: $site-width;
         padding: 0 $layout-padding;
         margin: auto;
@@ -14,48 +14,76 @@ header {
         .dev1 {
             height: $header-height;
             padding: 8px 0;
+            
         }
         .buscador{
-            margin-top: 8px;
-           width: 400px;
+          display:flex;
+          position: relative;
            border-radius: 5px;
-          
-            
+           height: 38px;
+           width: 300px;
+           margin-top: 7px;
+           margin-left: 20px;
+                         
            input{
                 height:40px;
-                border-radius: 5px;
-                width: 400px;
+                border-radius: 10px;
+                width: 300px;
+                border-color: rgb(188, 186, 186);
+                border: solid 1px rgb(178, 175, 175);
+                outline: rgb(129, 126, 126);
+                margin-left: 10px;
                 position: absolute;
-                            
-            } 
+                z-index: 1;
+        
+            }
+               button{ 
+                position: relative; 
+                align-self: flex-end; 
+                width: 40px; 
+                height: 38px;
+                border-color: white;
+                text-shadow: none;
+                background-color: white;
+                border: none;
+                border-radius: 5px;
+                margin-left: 267px;
+                margin-top: 1px;
+               z-index: 2;
+                  }
              a {
                     img {
-                        height: 30px;
-                        position: relative;
-                        margin-left: 360px;
-                        margin-top: 2px;
-                        z-index: 5;
-                        
+                        height: 28px;
+                      align-self:flex-end;
+                      z-index: 1;    
                        }
+                
                 }
+            button:hover{
+               background-color: rgba(0, 89, 255, 0.401);
+            }
+
+            }
+        
+        input:hover{
+            border: solid 2px rgb(117, 117, 117);
+        }
+        input:focus{
+            border:solid 2px rgb(59, 73, 223);
         }
         .container{
        display: flex;
         margin-left: 10px;
-        width: 80%;
-        height: $header-height;
-        
-      
-       
+         height: $header-height;
+        position: relative;
+             width: 900px;
+         justify-content: flex-end;
+             
         .logCreat{
-           margin-left: 70%;
-           border-radius: 10px;
-            width:fit-content;
-            justify-content: center;
-            
+       
             .uno{
                  color:black;
-                  
+                  position: relative;
                 }
             .uno:hover{
                 text-decoration:underline;
@@ -68,7 +96,8 @@ header {
                 
                  }
               button{
-                    border-radius: 10px;
+                position: relative;    
+                border-radius: 10px;
                     padding: 15px;
                     border-color: rgb(59, 73, 223);
                     font-size: 15px;
@@ -86,4 +115,31 @@ header {
 
 }
 
+@media screen and (max-width: 780px) {
 
+    .buscador{
+        border-color: none;
+        width: auto;
+        .buscando{
+            visibility: hidden;
+        }
+        button{
+          
+        }   
+     }
+    .container{
+        .logCreat{
+            .uno{
+                visibility: hidden;
+            button{
+                .uno{
+                  position: relative;
+                width: 600px;  
+                }
+                
+            }
+            }
+        }
+    }
+    
+}
