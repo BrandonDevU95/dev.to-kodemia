@@ -165,6 +165,79 @@ header nav .container .logCreat button:hover a {
     width: 600px;
   }
 }
+.post_center .post {
+  list-style: none;
+  padding: 0;
+}
+.post_center .post1 {
+  display: inline;
+  margin: 0 15px;
+  color: black;
+  text-decoration: none;
+}
+.post_center .post2 {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+  font-weight: bolder;
+}
+
+.post_img img {
+  margin-top: 2%;
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+}
+.post_img .comment {
+  padding: 10px;
+}
+.post_img .comment img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  box-shadow: 0 0 2px black;
+}
+.post_img .content-comment {
+  margin-left: 55px;
+  font-size: 11px;
+  position: relative;
+  top: -46px;
+  color: black;
+}
+.post_img h5 {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+.post_img .is-mute {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #969696;
+}
+.post_img h1 {
+  color: black;
+  font-weight: bolder;
+  font-size: 250%;
+}
+.post_img .post3 {
+  list-style: none;
+  margin-top: 2%;
+}
+.post_img .post5 {
+  display: inline;
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+.post_img .post4 {
+  color: black;
+  text-decoration: none;
+  font-size: 120%;
+}
+
 .conteiner {
   display: flex;
   flex-direction: column;
