@@ -3,7 +3,8 @@ header {
     height: $header-height;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     width: 100%;
-        nav {
+
+    nav {
         max-width: $site-width;
         padding: 0 $layout-padding;
         margin: auto;
@@ -14,19 +15,20 @@ header {
         .dev1 {
             height: $header-height;
             padding: 8px 0;
-            
+
         }
-        .buscador{
-          display:flex;
-          position: relative;
-           border-radius: 5px;
-           height: 38px;
-           width: 300px;
-           margin-top: 7px;
-           margin-left: 20px;
-                         
-           input{
-                height:40px;
+
+        .buscador {
+            display: flex;
+            position: relative;
+            border-radius: 5px;
+            height: 38px;
+            width: 300px;
+            margin-top: 7px;
+            margin-left: 20px;
+
+            input {
+                height: 40px;
                 border-radius: 10px;
                 width: 300px;
                 border-color: rgb(188, 186, 186);
@@ -35,12 +37,13 @@ header {
                 margin-left: 10px;
                 position: absolute;
                 z-index: 1;
-        
+
             }
-               button{ 
-                position: relative; 
-                align-self: flex-end; 
-                width: 40px; 
+
+            button {
+                position: relative;
+                align-self: flex-end;
+                width: 40px;
                 height: 38px;
                 border-color: white;
                 text-shadow: none;
@@ -49,97 +52,197 @@ header {
                 border-radius: 5px;
                 margin-left: 267px;
                 margin-top: 1px;
-               z-index: 2;
-                  }
-             a {
-                    img {
-                        height: 28px;
-                      align-self:flex-end;
-                      z-index: 1;    
-                       }
-                
-                }
-            button:hover{
-               background-color: rgba(0, 89, 255, 0.401);
+                z-index: 2;
             }
 
+            a {
+                img {
+                    height: 28px;
+                    align-self: flex-end;
+                    z-index: 1;
+                }
+
             }
-        
-        input:hover{
+
+            button:hover {
+                background-color: rgba(0, 89, 255, 0.401);
+            }
+
+        }
+
+        input:hover {
             border: solid 2px rgb(117, 117, 117);
         }
-        input:focus{
-            border:solid 2px rgb(59, 73, 223);
+
+        input:focus {
+            border: solid 2px rgb(59, 73, 223);
         }
-        .container{
-       display: flex;
-        margin-left: 10px;
-         height: $header-height;
-        position: relative;
-             width: 900px;
-         justify-content: flex-end;
-             
-        .logCreat{
-       
-            .uno{
-                 color:black;
-                  position: relative;
+
+        .container {
+            display: flex;
+            margin-left: 10px;
+            height: $header-height;
+            position: relative;
+            width: 900px;
+            justify-content: flex-end;
+
+            .logCreat {
+
+                .uno {
+                    color: black;
+                    position: relative;
                 }
-            .uno:hover{
-                text-decoration:underline;
-                color: rgb(59, 73, 223);
-            }            
-            a{
-               border-radius: 10px;
-               text-decoration: none;
-               padding: 5px;
-                
-                 }
-              button{
-                position: relative;    
-                border-radius: 10px;
+
+                .uno:hover {
+                    text-decoration: underline;
+                    color: rgb(59, 73, 223);
+                }
+
+                a {
+                    border-radius: 10px;
+                    text-decoration: none;
+                    padding: 5px;
+
+                }
+
+                button {
+                    position: relative;
+                    border-radius: 10px;
                     padding: 15px;
                     border-color: rgb(59, 73, 223);
                     font-size: 15px;
+                }
+
+                button:hover {
+                    color: white;
+                    background-color: rgb(59, 73, 223);
+                    text-decoration: underline;
+
+                    a {
+                        color: white;
                     }
-                    button:hover{
-                        color:white;
-                        background-color:rgb(59, 73, 223);
-                        text-decoration: underline;
-                        a{
-                            color: white;
-                        }
-                    }
-        } }
+                }
+            }
+        }
     }
 
 }
 
 @media screen and (max-width: 780px) {
 
-    .buscador{
+    .buscador {
         border-color: none;
         width: auto;
-        .buscando{
+
+        .buscando {
             visibility: hidden;
         }
-        button{
-          
-        }   
-     }
-    .container{
-        .logCreat{
-            .uno{
+
+        button {}
+    }
+
+    .container {
+        .logCreat {
+            .uno {
                 visibility: hidden;
-            button{
-                .uno{
-                  position: relative;
-                width: 600px;  
+
+                button {
+                    .uno {
+                        position: relative;
+                        width: 600px;
+                    }
+
                 }
-                
-            }
             }
         }
     }
-    
+
+}
+
+.post_center {
+    .post {
+        list-style: none;
+        padding: 0;
+    }
+
+    .post1 {
+        display: inline;
+        margin: 0 15px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .post2 {
+        color: black;
+        text-decoration: none;
+        font-weight: normal;
+        font-weight: bolder;
+    }
+}
+
+.post_img {
+    img {
+        margin-top: 2%;
+        height: 100%;
+        width: 100%;
+        border-radius: 2%;
+    }
+
+    .comment {
+        padding: 10px;
+    }
+
+    .comment img {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        box-shadow: 0 0 2px black;
+    }
+
+    .content-comment {
+        margin-left: 55px;
+        font-size: 11px;
+        position: relative;
+        top: -46px;
+        color: black;
+    }
+
+    h5 {
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .is-mute {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.04em;
+        color: #969696;
+    }
+
+    h1 {
+        color: black;
+        font-weight: bolder;
+        font-size: 250%;
+    }
+
+    .post3 {
+        list-style: none;
+        margin-top: 2%;
+    }
+
+    .post5 {
+        display: inline;
+        margin: 0 10px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .post4 {
+        color: black;
+        text-decoration: none;
+        font-size: 120%;
+    }
 }
