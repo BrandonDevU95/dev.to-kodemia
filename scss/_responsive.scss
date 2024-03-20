@@ -1,1 +1,16 @@
 // Aqui van los estilos con media query para dispositivos móviles, tablets y desktops.
+
+
+
+@media screen and (max-width:1023px) {
+    .left-aside {
+        display: none;
+    }
+    .leftas {
+        width: 100%;
+    }
+    .post_center{
+        width: 100%;
+    }
+    
+}
