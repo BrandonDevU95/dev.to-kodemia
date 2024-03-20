@@ -46,15 +46,43 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 576px) {
+  .layout {
+    grid-template-columns: 2fr !important;
+    padding: 0 !important;
+  }
+  .right-aside,
   .left-aside {
     display: none;
   }
-  .leftas {
-    width: 100%;
+  .content_post {
+    padding-left: 0 !important;
   }
-  .post_center {
-    width: 100%;
+  .body_post {
+    padding: 1rem 1rem 0.75rem !important;
+  }
+  .reactions_comments > span {
+    display: none;
+  }
+  .content_post__bottom_details_right > span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 2fr !important;
+  }
+  .right-aside,
+  .left-aside {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .layout {
+    grid-template-columns: 240px 2fr;
+  }
+  .left-aside {
+    display: none;
   }
 }
 header {
@@ -179,12 +207,6 @@ header nav .container .logCreat button:hover a {
   .container .logCreat .uno button .uno {
     position: relative;
     width: 600px;
-  }
-  .leftas {
-    display: none;
-  }
-  .post_center {
-    width: 200%;
   }
 }
 .post_center .post {
