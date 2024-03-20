@@ -98,10 +98,28 @@ header nav {
   display: flex;
   position: relative;
   height: 56px;
+  flex-direction: row;
 }
-header nav .dev1 {
+header nav .izq button {
+  padding: 2px;
+  align-items: center;
+  position: absolute;
+  align-items: center;
+  margin-top: 12px;
+  background-color: white;
+  border-color: white;
+  text-shadow: none;
+  visibility: none;
+}
+header nav .izq button:hover {
+  background-color: #a5a3a3;
+  border-color: #a5a3a3;
+  cursor: pointer;
+}
+header nav .izq .dev1 {
   height: 56px;
   padding: 8px 0;
+  position: relative;
 }
 header nav .buscador {
   display: flex;
@@ -193,13 +211,24 @@ header nav .container .logCreat button:hover a {
   color: white;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
+  .izq button {
+    visibility: visible;
+  }
+  .izq .dev1 {
+    margin-left: 40px;
+  }
   .buscador {
     border-color: none;
-    width: auto;
+    width: 200px;
   }
   .buscador .buscando {
     visibility: hidden;
+    width: 200px;
+  }
+  .buscador .lupa {
+    margin-left: 150px;
+    position: absolute;
   }
   .container .logCreat .uno {
     visibility: hidden;

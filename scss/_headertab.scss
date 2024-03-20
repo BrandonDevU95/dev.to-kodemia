@@ -11,11 +11,34 @@ header {
 		display: flex;
 		position: relative;
 		height: $header-height;
-
+		flex-direction: row;
+		
+		.izq{
+		button{
+			padding: 2px;
+			align-items: center;
+			position:absolute;
+			align-items:center;
+			margin-top: 12px;
+			background-color: white;
+			border-color: white;
+			text-shadow: none;
+			visibility: none; 
+			
+		}
+		button:hover{
+			background-color: #a5a3a3;
+			border-color:#a5a3a3;
+			cursor:pointer
+		}
+			
+		
 		.dev1 {
 			height: $header-height;
 			padding: 8px 0;
+			position: relative;
 		}
+	}
 
 		.buscador {
 			display: flex;
@@ -124,13 +147,29 @@ header {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
+	.izq{
+		button{
+			visibility:visible;
+			
+			}
+
+		.dev1{
+			margin-left: 40px;
+		}
+	}
+	
 	.buscador {
 		border-color: none;
-		width: auto;
+		width: 200px;
 
 		.buscando {
-			visibility: hidden;
+			visibility:hidden;
+			width: 200px;
+		}
+		.lupa{
+			margin-left: 150px;
+			position: absolute;
 		}
 	}
 
