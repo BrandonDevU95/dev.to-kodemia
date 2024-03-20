@@ -46,6 +46,24 @@ footer {
   text-align: center;
 }
 
+@media screen and (max-width: 576px) {
+  .layout {
+    grid-template-columns: 2fr !important;
+    padding: 0 !important;
+  }
+  .content_post {
+    padding-left: 0 !important;
+  }
+  .body_post {
+    padding: 1rem 1rem 0.75rem !important;
+  }
+  .reactions_comments > span {
+    display: none;
+  }
+  .content_post__bottom_details_right > span {
+    display: none;
+  }
+}
 header {
   background-color: #FFFFFF;
   height: 56px;
