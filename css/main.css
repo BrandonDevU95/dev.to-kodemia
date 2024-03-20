@@ -167,7 +167,7 @@ header nav .container .logCreat button:hover a {
   color: white;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
   .buscador {
     border-color: none;
     width: auto;
@@ -181,6 +181,12 @@ header nav .container .logCreat button:hover a {
   .container .logCreat .uno button .uno {
     position: relative;
     width: 600px;
+  }
+  .leftas {
+    display: none;
+  }
+  .post_center {
+    width: 200%;
   }
 }
 .post_center .post {
