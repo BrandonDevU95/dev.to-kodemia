@@ -131,6 +131,11 @@ header nav .container {
   width: 900px;
   justify-content: flex-end;
 }
+header nav .container .logCreat {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 header nav .container .logCreat .uno {
   color: black;
   position: relative;
