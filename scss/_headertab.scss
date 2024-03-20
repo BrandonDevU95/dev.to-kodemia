@@ -121,7 +121,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
 	.buscador {
 		border-color: none;
 		width: auto;
@@ -145,6 +145,12 @@ header {
 			}
 		}
 	}
+	.leftas {
+        display: none;
+    }
+    .post_center{
+        width: 200%;
+    }
 }
 
 .post_center {
