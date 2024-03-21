@@ -67,6 +67,12 @@ footer {
   .content_post__bottom_details_right > span {
     display: none;
   }
+  header nav .buscador button {
+    margin: 0 !important;
+  }
+  header nav .container .logCreat button {
+    padding: 10px !important;
+  }
 }
 @media (max-width: 768px) {
   .layout {
@@ -301,8 +307,7 @@ header nav .container .logCreat button:hover a {
   text-decoration: none;
   font-size: 120%;
 }
-
-.post-name {
+.post_img .post-name {
   margin-left: 20px;
   margin-top: 10px;
   padding-top: 30px;
@@ -652,6 +657,29 @@ header nav .container .logCreat button:hover a {
   fill: #3B49DF;
   background-color: rgba(59, 73, 223, 0.1);
   border-radius: 20%;
+}
+
+.popular-tags {
+  display: flex;
+  overflow-y: scroll;
+  height: 42vh;
+}
+
+.dev-community-tag {
+  margin: 1.5rem 0;
+}
+
+.last-part-aside p {
+  color: #404040;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.last-part-aside a {
+  color: #3B49DF;
+  text-decoration: none;
+}
+.last-part-aside a:hover {
+  text-decoration: underline;
 }
 
 .popular-tags {

@@ -26,6 +26,14 @@
 	.content_post__bottom_details_right>span {
 		display: none;
 	}
+	
+	header nav .buscador button {
+		margin: 0 !important;
+	}
+
+	header nav .container .logCreat button {
+		padding: 10px !important;
+	}
 }
 
 @media (max-width: 768px) {
