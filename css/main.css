@@ -49,7 +49,7 @@ footer {
 @media (max-width: 576px) {
   .layout {
     grid-template-columns: 2fr !important;
-    padding: 0 !important;
+    padding: 20px 0 !important;
   }
   .right-aside,
   .left-aside {
@@ -66,6 +66,12 @@ footer {
   }
   .content_post__bottom_details_right > span {
     display: none;
+  }
+  header nav .buscador button {
+    margin: 0 !important;
+  }
+  header nav .container .logCreat button {
+    padding: 10px !important;
   }
 }
 @media (max-width: 768px) {
@@ -179,7 +185,6 @@ header nav .container {
 }
 header nav .container .logCreat {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 header nav .container .logCreat .uno {
@@ -269,16 +274,37 @@ header nav .container .logCreat button:hover a {
 }
 .post_center .post2 {
   color: black;
-  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-color: blue;
   font-weight: normal;
   font-weight: bolder;
 }
 
+.post_img {
+  background-color: white;
+}
+.post_img .more {
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  margin-top: -40px;
+  margin-right: 20px;
+  font-size: 180%;
+}
+.post_img .img2 {
+  margin-top: 2%;
+  height: 80%;
+  width: 90%;
+  border-radius: 2%;
+  margin-left: 5%;
+}
 .post_img img {
   margin-top: 2%;
   height: 100%;
   width: 100%;
-  border-radius: 2%;
+  border-radius: 1%;
+  background-color: white;
 }
 .post_img .comment {
   padding: 10px;
@@ -287,7 +313,7 @@ header nav .container .logCreat button:hover a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0 0 2px black;
 }
 .post_img .content-comment {
@@ -328,6 +354,13 @@ header nav .container .logCreat button:hover a {
   color: black;
   text-decoration: none;
   font-size: 120%;
+}
+.post_img .post-name {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-top: 30px;
+  font-size: 15px;
+  color: #969696;
 }
 
 .simple_post {
@@ -672,6 +705,29 @@ header nav .container .logCreat button:hover a {
   fill: #3B49DF;
   background-color: rgba(59, 73, 223, 0.1);
   border-radius: 20%;
+}
+
+.popular-tags {
+  display: flex;
+  overflow-y: scroll;
+  height: 42vh;
+}
+
+.dev-community-tag {
+  margin: 1.5rem 0;
+}
+
+.last-part-aside p {
+  color: #404040;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.last-part-aside a {
+  color: #3B49DF;
+  text-decoration: none;
+}
+.last-part-aside a:hover {
+  text-decoration: underline;
 }
 
 .popular-tags {
