@@ -301,7 +301,8 @@ header nav .container .logCreat button:hover a {
   text-decoration: none;
   font-size: 120%;
 }
-.post_img .post-name {
+
+.post-name {
   margin-left: 20px;
   margin-top: 10px;
   padding-top: 30px;

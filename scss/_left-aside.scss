@@ -136,11 +136,35 @@
     fill: $secondary;
     transition: fill 0.3s;
   }
-
   svg:hover {
     fill: $primary;
     background-color: $primary-light;
     border-radius: 20%;
+  }
+}
+
+.popular-tags {
+  display: flex;
+  overflow-y: scroll;
+  height: 42vh;
+}
+
+.dev-community-tag {
+  margin: 1.5rem 0;
+}
+
+.last-part-aside {
+  p {
+    color: $text-dark;
+    font-size: $fs-base;
+    margin: 1rem 0;
+  }
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
 
