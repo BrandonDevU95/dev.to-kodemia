@@ -46,6 +46,45 @@ footer {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .layout {
+    grid-template-columns: 2fr !important;
+    padding: 20px 0 !important;
+  }
+  .right-aside,
+  .left-aside {
+    display: none;
+  }
+  .content_post {
+    padding-left: 0 !important;
+  }
+  .body_post {
+    padding: 1rem 1rem 0.75rem !important;
+  }
+  .reactions_comments > span {
+    display: none;
+  }
+  .content_post__bottom_details_right > span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 2fr !important;
+  }
+  .right-aside,
+  .left-aside {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .layout {
+    grid-template-columns: 240px 2fr;
+  }
+  .left-aside {
+    display: none;
+  }
+}
 header {
   background-color: #FFFFFF;
   height: 56px;
@@ -119,6 +158,10 @@ header nav .container {
   position: relative;
   width: 900px;
   justify-content: flex-end;
+}
+header nav .container .logCreat {
+  display: flex;
+  align-items: center;
 }
 header nav .container .logCreat .uno {
   color: black;
@@ -471,4 +514,164 @@ header nav .container .logCreat button:hover a {
 
 .commentscont {
   color: #717171;
+}
+
+.create-account-card {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(59, 73, 223, 0.1);
+}
+.create-account-card h2 {
+  color: #242424;
+  font-size: 1.25rem;
+}
+.create-account-card p {
+  color: #404040;
+  font-size: 1rem;
+}
+
+.create-account {
+  display: block;
+  background-color: #FFFFFF;
+  color: #3B49DF;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3B49DF;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.create-account:hover {
+  display: block;
+  background-color: #3B49DF;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 1px solid #3B49DF;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.create-account-login {
+  display: block;
+  color: #404040;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.create-account-login:hover {
+  display: block;
+  color: #404040;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(59, 73, 223, 0.1);
+}
+
+.main-nav {
+  margin-top: 1rem;
+  background-color: rgb(245, 245, 245);
+}
+.main-nav ul {
+  list-style: none;
+}
+.main-nav ul span {
+  margin-right: 10px;
+}
+
+.menu-item {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: block;
+  color: #404040;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  display: block;
+  color: #404040;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: rgba(59, 73, 223, 0.1);
+}
+
+.other-nav {
+  margin-top: 1rem;
+  background-color: rgb(245, 245, 245);
+}
+.other-nav h2 {
+  color: #242424;
+  font-size: 1.25rem;
+}
+.other-nav ul {
+  list-style: none;
+}
+.other-nav ul span {
+  margin-right: 10px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.social-media-icons svg {
+  width: 24px;
+  height: 24px;
+  margin: 0 0.5rem;
+  fill: #242424;
+  transition: fill 0.3s;
+}
+.social-media-icons svg:hover {
+  fill: #3B49DF;
+  background-color: rgba(59, 73, 223, 0.1);
+  border-radius: 20%;
+}
+
+.popular-tags {
+  display: flex;
+  overflow-y: scroll;
+  height: 42vh;
+}
+
+.dev-community-tag {
+  margin: 1.5rem 0;
+}
+
+.last-part-aside p {
+  color: #404040;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.last-part-aside a {
+  color: #3B49DF;
+  text-decoration: none;
+}
+.last-part-aside a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
