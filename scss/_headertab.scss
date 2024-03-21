@@ -111,7 +111,7 @@ header {
 				align-items: center;
 				.uno {
 					color: black;
-					position: relative;
+					
 				}
 
 				.uno:hover {
@@ -177,10 +177,11 @@ header {
 		.logCreat {
 			.uno {
 				visibility: hidden;
+                position: absolute;
 
 				button {
 					.uno {
-						position: relative;
+						
 						width: 600px;
 					}
 				}
@@ -189,6 +190,35 @@ header {
 	}
 }
 
+@media screen and (max-width: 626px) {
+    .buscador {
+		border-color: none;
+		width: 60px;
+
+		.buscando {
+			visibility:hidden;
+			width: 60px;
+		}
+		.lupa{
+			margin-left: 30px;
+			position: relative;
+		}
+	}
+    .container{
+        .logCreat{
+            .uno{
+                button{
+                    .uno{
+                        position:absolute;
+                    }
+                }
+                .dos{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
 
 
 
