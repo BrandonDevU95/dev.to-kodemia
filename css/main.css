@@ -104,10 +104,28 @@ header nav {
   display: flex;
   position: relative;
   height: 56px;
+  flex-direction: row;
 }
-header nav .dev1 {
+header nav .izq button {
+  padding: 2px;
+  align-items: center;
+  position: absolute;
+  align-items: center;
+  margin-top: 12px;
+  background-color: white;
+  border-color: white;
+  text-shadow: none;
+  visibility: none;
+}
+header nav .izq button:hover {
+  background-color: #a5a3a3;
+  border-color: #a5a3a3;
+  cursor: pointer;
+}
+header nav .izq .dev1 {
   height: 56px;
   padding: 8px 0;
+  position: relative;
 }
 header nav .buscador {
   display: flex;
@@ -138,8 +156,8 @@ header nav .buscador button {
   text-shadow: none;
   background-color: white;
   border: none;
-  border-radius: 5px;
-  margin-left: 267px;
+  border-radius: 10px;
+  margin-left: 269.5px;
   margin-top: 1px;
   z-index: 2;
 }
@@ -171,7 +189,6 @@ header nav .container .logCreat {
 }
 header nav .container .logCreat .uno {
   color: black;
-  position: relative;
 }
 header nav .container .logCreat .uno:hover {
   text-decoration: underline;
@@ -199,19 +216,50 @@ header nav .container .logCreat button:hover a {
 }
 
 @media screen and (max-width: 780px) {
+  .izq button {
+    visibility: visible;
+  }
+  .izq .dev1 {
+    margin-left: 40px;
+  }
   .buscador {
     border-color: none;
-    width: auto;
+    width: 200px;
   }
   .buscador .buscando {
     visibility: hidden;
+    width: 200px;
+  }
+  .buscador .lupa {
+    margin-left: 150px;
+    position: absolute;
   }
   .container .logCreat .uno {
     visibility: hidden;
+    position: absolute;
   }
   .container .logCreat .uno button .uno {
-    position: relative;
     width: 600px;
+  }
+}
+@media screen and (max-width: 626px) {
+  .buscador {
+    border-color: none;
+    width: 60px;
+  }
+  .buscador .buscando {
+    visibility: hidden;
+    width: 60px;
+  }
+  .buscador .lupa {
+    margin-left: 30px;
+    position: relative;
+  }
+  .container .logCreat .uno button .uno {
+    position: absolute;
+  }
+  .container .logCreat .uno .dos {
+    margin-left: 0;
   }
 }
 .post_center .post {
