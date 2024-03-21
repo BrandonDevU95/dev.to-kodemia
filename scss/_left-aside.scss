@@ -8,6 +8,7 @@
     color: $secondary;
     font-size: 1.25rem;
   }
+
   p {
     color: $text-dark;
     font-size: $fs-base;
@@ -28,6 +29,7 @@
   text-decoration: none;
   text-align: center;
 }
+
 .create-account:hover {
   display: block;
   background-color: $primary;
@@ -42,6 +44,7 @@
   text-decoration: none;
   text-align: center;
 }
+
 .create-account-login {
   display: block;
   color: $text-dark;
@@ -52,6 +55,7 @@
   text-decoration: none;
   text-align: center;
 }
+
 .create-account-login:hover {
   display: block;
   color: $text-dark;
@@ -67,8 +71,10 @@
 .main-nav {
   margin-top: $layout-gap;
   background-color: $backgound;
+
   ul {
     list-style: none;
+
     span {
       margin-right: 10px;
     }
@@ -86,6 +92,7 @@
   cursor: pointer;
   text-decoration: none;
 }
+
 .menu-item:hover {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -95,7 +102,7 @@
   padding: 0.5rem 1rem;
   margin-top: 0.5rem;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   background-color: $primary-light;
 }
 
@@ -104,15 +111,19 @@
     color: $secondary;
     font-size: 1.25rem;
   }
+
   margin-top: $layout-gap;
   background-color: $backgound;
+
   ul {
     list-style: none;
+
     span {
       margin-right: 10px;
     }
   }
 }
+
 .social-media-icons {
   display: flex;
   justify-content: center;
@@ -122,11 +133,40 @@
     width: 24px;
     height: 24px;
     margin: 0 0.5rem;
-    fill: $text-dark;
+    fill: $secondary;
     transition: fill 0.3s;
+  }
 
-    &:hover {
-      fill: $primary;
-    }
+  svg:hover {
+    fill: $primary;
+    background-color: $primary-light;
+    border-radius: 20%;
+  }
+}
+
+.popular-tags {
+  display: flex;
+  overflow-y: scroll;
+  height: 42vh;
+}
+
+.dev-community-tag {
+  margin: 1.5rem 0;
+}
+
+.last-part-aside {
+  p {
+    color: $text-dark;
+    font-size: $fs-base;
+    margin: 1rem 0;
+  }
+
+  a {
+    color: $primary;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
