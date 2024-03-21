@@ -220,16 +220,37 @@ header nav .container .logCreat button:hover a {
 }
 .post_center .post2 {
   color: black;
-  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-color: blue;
   font-weight: normal;
   font-weight: bolder;
 }
 
+.post_img {
+  background-color: white;
+}
+.post_img .more {
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  margin-top: -40px;
+  margin-right: 20px;
+  font-size: 180%;
+}
+.post_img .img2 {
+  margin-top: 2%;
+  height: 80%;
+  width: 90%;
+  border-radius: 2%;
+  margin-left: 5%;
+}
 .post_img img {
   margin-top: 2%;
   height: 100%;
   width: 100%;
-  border-radius: 2%;
+  border-radius: 1%;
+  background-color: white;
 }
 .post_img .comment {
   padding: 10px;
@@ -238,7 +259,7 @@ header nav .container .logCreat button:hover a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   box-shadow: 0 0 2px black;
 }
 .post_img .content-comment {
@@ -279,6 +300,14 @@ header nav .container .logCreat button:hover a {
   color: black;
   text-decoration: none;
   font-size: 120%;
+}
+
+.post-name {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-top: 30px;
+  font-size: 15px;
+  color: #969696;
 }
 
 .simple_post {
