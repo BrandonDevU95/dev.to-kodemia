@@ -184,7 +184,6 @@ header nav .container .logCreat {
 }
 header nav .container .logCreat .uno {
   color: black;
-  position: relative;
 }
 header nav .container .logCreat .uno:hover {
   text-decoration: underline;
@@ -232,10 +231,30 @@ header nav .container .logCreat button:hover a {
   }
   .container .logCreat .uno {
     visibility: hidden;
+    position: absolute;
   }
   .container .logCreat .uno button .uno {
-    position: relative;
     width: 600px;
+  }
+}
+@media screen and (max-width: 626px) {
+  .buscador {
+    border-color: none;
+    width: 60px;
+  }
+  .buscador .buscando {
+    visibility: hidden;
+    width: 60px;
+  }
+  .buscador .lupa {
+    margin-left: 30px;
+    position: relative;
+  }
+  .container .logCreat .uno button .uno {
+    position: absolute;
+  }
+  .container .logCreat .uno .dos {
+    margin-left: 0;
   }
 }
 .post_center .post {
@@ -618,7 +637,7 @@ header nav .container .logCreat button:hover a {
   padding: 0.5rem 1rem;
   margin-top: 0.5rem;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: underline;
   background-color: rgba(59, 73, 223, 0.1);
 }
 
@@ -646,9 +665,34 @@ header nav .container .logCreat button:hover a {
   width: 24px;
   height: 24px;
   margin: 0 0.5rem;
-  fill: #404040;
+  fill: #242424;
   transition: fill 0.3s;
 }
 .social-media-icons svg:hover {
   fill: #3B49DF;
+  background-color: rgba(59, 73, 223, 0.1);
+  border-radius: 20%;
+}
+
+.popular-tags {
+  display: flex;
+  overflow-y: scroll;
+  height: 42vh;
+}
+
+.dev-community-tag {
+  margin: 1.5rem 0;
+}
+
+.last-part-aside p {
+  color: #404040;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.last-part-aside a {
+  color: #3B49DF;
+  text-decoration: none;
+}
+.last-part-aside a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
