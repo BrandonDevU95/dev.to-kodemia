@@ -83,6 +83,9 @@ header {
             justify-content: flex-end;
 
             .logCreat {
+                display: flex;
+                align-items: center;
+
                 .uno {
                     color: black;
                     position: relative;
